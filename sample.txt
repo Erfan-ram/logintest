@@ -1,0 +1,4 @@
+f" {self.GenEmoji()}  !!"
+    def GenEmoji(self) -> str:
+
+        return chr(choice(range(0x1F600, 0x1F638)))
