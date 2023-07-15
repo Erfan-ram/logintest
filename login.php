@@ -43,7 +43,7 @@ body {
         values(
         '$h1','$h2','$h3')";
         
-        $con=mysqli_connect("www.isource.com","root","13805668","isource");
+        $con=mysqli_connect("localhost","root","123456","Login_db");
         if (!$con) {
         die(""."</br>" . mysqli_connect_error());
      }
@@ -62,7 +62,7 @@ body {
 <?php
 $t1=$_REQUEST['husername'];
 $t2=$_REQUEST['hpassword'];
-$con=mysqli_connect("localhost","root","","isource");
+$con=mysqli_connect("localhost","root","123456","Login_db");
   
 
         $sql = "SELECT * FROM users WHERE NAME='$t1' AND PASS='$t2'";
